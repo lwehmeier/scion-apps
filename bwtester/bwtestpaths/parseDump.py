@@ -127,3 +127,5 @@ for line in content:
 #print(network)
 #print(linkSpeeds)
 print(toDot(network, paths, linkSpeeds,int(sys.argv[2]), int(sys.argv[3])))
+with open(sys.argv[1]+".dot", "w") as f:
+	f.write(toDot(network, paths, linkSpeeds,int(sys.argv[2]), int(sys.argv[3])))
